@@ -4,7 +4,7 @@
     transition: 0.3s;
     width: 100%;
     background-color: aqua;
-  
+    position: relative;
   }
   
   .card:hover {
@@ -19,6 +19,7 @@
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 30px;
+    position: relative;
   }
   .listing {
     background: var(--accent-color);
