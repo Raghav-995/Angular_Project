@@ -1,0 +1,10 @@
+
+    
+    <section class="listing" *ngFor="let item of productsList">
+        <img class="listing-photo" [src]="item.image" alt="Exterior photo of {{item.title}}">
+        <h2 class="listing-heading">{{ item.price }}</h2>
+        <p class="listing-location">Category : {{ item.category}}</p>
+        <p class="listing-location">Description: {{item.description }}</p>
+      </section>
+
+
