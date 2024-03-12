@@ -1,8 +1,8 @@
 .footer {
     position: relative;
-    width: 98%;
     background: #3586ff;
-
+    min-height: 100px;
+    padding-top: 30px;
     padding:  10px;
     display: flex;
     justify-content: center;
@@ -45,4 +45,8 @@
     text-decoration: none;
     opacity: 0.75;
     font-weight: 300;
+  }
+
+  .top{
+    padding-top: 20px;
   }

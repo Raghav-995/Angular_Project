@@ -13,12 +13,13 @@ import { CommonModule } from '@angular/common';
 })
 export class DisplayItemsComponent implements OnInit {
   productsList: Products[] = [];
+  filteredLocationList: Products[] = [];
   productsService: ProductsService = inject(ProductsService);
   
   constructor() {
     this.productsService.getData().then((productsList: Products[]) => {
       this.productsList = productsList;
-      
+      this.filteredLocationList = this.productsList;
     });
   }
     ngOnInit(): void {
